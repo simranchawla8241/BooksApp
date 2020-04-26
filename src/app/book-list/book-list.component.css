@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+html { font-size: 22px; }
+body { padding: 1rem; }
+
+h2{
+    color: #5E56E7;
+    font-family: Montserrat, Semi Bold;
+}
+.card {
+
+color: white;
+padding: 1rem;
+height: 200px;
+
+}
+
+.cards {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-gap: 1rem;
+
+}
+h6{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-family: Montserrat, Semi Bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color:#333333;
+}
+p{
+    margin-top: 0;
+    text-transform: capitalize;
+    font-family: Montserrat, Regular;
+    font-size: 12px;
+    color: #A0A0A0;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+.cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+.cards { grid-template-columns: repeat(6, 1fr); }
+}
+
+
+
+
+
+.search {
+width: 100%;
+position: relative;
+display: flex;
+height: 20px;
+}
+
+.searchTerm {
+width: 50%;
+border: 2px solid #5E56E7;
+border-right: 2px solid #5E56E7;
+padding: 5px;
+height: 30px;
+border-radius: 5px 5px 5px 5px;
+outline: none;
+color: #9DBFAF;
+}
+
+.searchTerm:focus{
+color: #5E56E7;
+}
+
+.searchButton {
+width: 40px;
+height: 30px;
+border: 1px solid #5E56E7;
+background: #5E56E7;;
+text-align: center;
+color: #fff;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+width: 100%;
+padding-left: 5%;
+top: 50%;
+left: 50%;
+background-color: #F8F7FF;
+height: 250px;
+}
+div >img{
+
+width: 120px;
+width: 114px;
+height: 162px;
+border-radius: 8px;
+box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+}
